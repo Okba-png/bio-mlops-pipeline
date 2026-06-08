@@ -1,0 +1,11 @@
+install:
+	python -m pip install --upgrade pip && \
+	    python -m pip install -r requirements.txt
+
+lint:
+    pylint --disable=R,C,W1203,W0718 src/   
+
+test:
+    python -m pytest -vv --cov=src tests/
+
+all: install lint test

@@ -1,0 +1,15 @@
+# Python-Artefakte
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Daten & Umgebungen
+data/
+.venv/
+env/
+venv/
+.DS_Store
